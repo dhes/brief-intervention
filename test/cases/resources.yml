@@ -1,0 +1,1282 @@
+resusable_resources:
+- &RecentAlcoholScreenings
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'completed'
+    authored: 2020-01-20
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#3drinks 3 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usauditc-score'
+      answer:
+        valueDecimal: 7
+    - linkId: 'usaudit-question-four'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-five'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-six'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-seven'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-eight'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-nine'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+    - linkId: 'usaudit-question-ten'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+    - linkId: 'usaudit-score'
+      answer:
+        valueDecimal: 17
+  - resourceType: Observation
+    code: http://www.cdc.gov/ncbddd/fasd#UAFS USAUDIT Total Score code
+    valueInteger: 17
+    issued: 2020-01-20
+- &Nida2UsAuditQuestionnaireResponsesFullAuditComplete
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/nidaqs2usaudit'
+    status: 'completed'
+    authored: 2020-03-09
+    item:
+    - linkId: 'nidaqs-alcohol-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'nidaqs-tobacco-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+    - linkId: 'nidaqs-rx-drug-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+    - linkId: 'nidaqs-illegal-drug-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-four'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-five'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-six'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-seven'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-eight'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-nine'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+    - linkId: 'usaudit-question-ten'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+    - linkId: 'usauditc-score'
+      answer:
+        valueDecimal: 7
+    - linkId: 'usaudit-score'
+      answer:
+        valueDecimal: 17
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/nidaqs2usaudit'
+    status: 'completed'
+    authored: 2020-03-09
+    item:
+    - linkId: 'nidaqs-alcohol-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'nidaqs-tobacco-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'nidaqs-rx-drug-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+    - linkId: 'nidaqs-illegal-drug-question'
+      answer:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-four'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-five'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-six'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-seven'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-eight'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-nine'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-ten'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usauditc-score'
+      answer:
+        valueDecimal: 7
+    - linkId: 'usaudit-score'
+      answer:
+        valueDecimal: 17
+- &UsAuditQuestionnaireResponsesStopAtAuditC
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#1drink 1 drink
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#2drinks 2 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#3drinks 3 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+- &UsAuditQuestionnaireResponsesFullAuditProgress
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-four'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-five'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-six'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-seven'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-eight'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+- &UsAuditQuestionnaireResponsesFullAuditComplete
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-four'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-five'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-six'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-seven'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-eight'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+    - linkId: 'usaudit-question-nine'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+    - linkId: 'usaudit-question-ten'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+  - resourceType: QuestionnaireResponse
+    questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    status: 'in-progress'
+    authored: 2020-03-09
+    item:
+    - linkId: 'prescreen-question'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-one'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-two'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+    - linkId: 'usaudit-question-three'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-four'
+      answer:
+      - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-five'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-six'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-seven'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-eight'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+    - linkId: 'usaudit-question-nine'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+    - linkId: 'usaudit-question-ten'
+      answer:
+        valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+- &UsAuditQuestionnaire
+  - resourceType: Questionnaire
+    url: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+    item:
+      - linkId: 'instructions'
+        type: http://hl7.org/fhir/item-type|4.0.1#display 'Display'
+      - linkId: 'prescreen-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Do you sometimes drink beer, wine, or other alcoholic beverages?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+      - linkId: 'usaudit-question-one'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often do you have a drink containing alcohol?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2to3timesaweek 2-3 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#4to6timesaweek 4-6 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 5
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 6
+      - linkId: 'usaudit-question-two'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How many standard drinks containing alcohol do you have on a typical day when drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#1drink 1 drink
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2drinks 2 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#3drinks 3 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#5to6drinks 5-6 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#7to8drinks 7-8 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 5
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#10ormoredrinks 10 or more drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 6
+      - linkId: 'usaudit-question-three'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 
+          value: 'How often do you have X (5 for men; 4 for women and men over 65) or more drinks on one occasion?'
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/cqf-calculatedValue'
+            valueCoding: http://www.cdc.gov/ncbddd/fasd#CODE UsAuditQuestion3Text'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2to3timesaweek 2-3 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#4to6timesaweek 4-6 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 5
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 6
+      - linkId: 'usauditc-score'
+        type: http://hl7.org/fhir/item-type|4.0.1#decimal 'Decimal'
+        text: 'AUDIT-C Score'
+        extension:
+        - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+          valueExpression:
+            language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+            expression: 'ScoreUsAuditC'
+            reference: '#UsAuditLogicLibrary|1.0'
+      - linkId: 'should-display-questions-four-through-eight'
+        extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/designNote'
+            valueMarkdown: 'Display Question #4 of the USAUDIT'
+          - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+            valueExpression:
+              language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+              expression: 'DisplayUsAuditQuestions4to8'
+              reference: '#UsAuditLogicLibrary|1.0'
+        enableWhen:
+          - question: "instructions"
+            operator: http://hl7.org/fhir/questionnaire-enable-operator|4.0.1#exists "Exists"
+            answerBoolean: true
+      - linkId: 'usaudit-question-four'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you found that you were not able to stop drinking once you had started?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-five'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you failed to do what was normally expected of you because of drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-six'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you needed a drink in the morning to get yourself going after a heavy drinking session?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-seven'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you had a feeling of guilt or remorse after drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-eight'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you been unable to remember what happened the night before because you had been drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'should-display-questions-nine-and-ten'
+        extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/designNote'
+            valueMarkdown: 'Display Question #9 of the USAUDIT'
+          - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+            valueExpression:
+              language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+              expression: 'DisplayUsAuditQuestions9and10'
+              reference: '#UsAuditLogicLibrary|1.0'
+        enableWhen:
+          - question: "instructions"
+            operator: http://hl7.org/fhir/questionnaire-enable-operator|4.0.1#exists "Exists"
+            answerBoolean: true
+      - linkId: 'usaudit-question-nine'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Have you or someone else been injured as a result of your drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, but not in the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, during the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-ten'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Has a relative or friend, doctor or other health worker been concerned about your drinking or suggested you cut down?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, but not in the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, during the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-score'
+        type: http://hl7.org/fhir/item-type|4.0.1#decimal 'Decimal'
+        text: 'AUDIT Score'
+        extension:
+        - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+          valueExpression:
+            language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+            expression: 'ScoreFullUsAudit'
+            reference: '#UsAuditLogicLibrary|1.0'
+      - linkId: 'pregnancy-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#boolean 'Boolean'
+        text: 'Are you pregnant or trying to be become pregnant?'
+- &AuditQuestionnaire
+  - resourceType: Questionnaire
+    url: 'http://www.cdc.gov/ncbddd/fasd/audit'
+    item:
+      - linkId: 'instructions'
+        type: http://hl7.org/fhir/item-type|4.0.1#display 'Display'
+      - linkId: 'prescreen-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Do you sometimes drink beer, wine, or other alcoholic beverages?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+      - linkId: 'audit-question-one'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often do you have a drink containing alcohol?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly or less
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2to4timesamonth 2-4 times a month
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2to3timesaweek 2-3 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#4ormoretimesaweek 4 or more times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'audit-question-two'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How many standard drinks containing alcohol do you have on a typical day when drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#1or2 1 or 2
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#3or4 3 or 4
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#5or6 5 or 6
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#7to9 7 to 9
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#10ormore 10 or more
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'audit-question-three'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 
+          value: 'How often do you have X (5 for men; 4 for women and men over 65) or more drinks on one occasion?'
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/cqf-calculatedValue'
+            valueCoding: http://www.cdc.gov/ncbddd/fasd#CODE AuditQuestion3Text'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'auditc-score'
+        type: http://hl7.org/fhir/item-type|4.0.1#display 'Display'
+        text: 'AUDIT-C Score'
+        extension:
+        - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+          valueExpression:
+            language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+            expression: 'ScoreAuditC'
+            reference: '#AuditLogicLibrary|1.0'
+      - linkId: 'should-display-questions-four-through-eight'
+        extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/designNote'
+            valueMarkdown: 'Display Question #4 of the Audit'
+          - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+            valueExpression:
+              language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+              expression: 'DisplayAuditQuestions4to8'
+              reference: '#AuditLogicLibrary|1.0'
+        enableWhen:
+          - question: "instructions"
+            operator: http://hl7.org/fhir/questionnaire-enable-operator|4.0.1#exists "Exists"
+            answerBoolean: true
+      - linkId: 'audit-question-four'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you found that you were not able to stop drinking once you had started?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'audit-question-five'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you failed to do what was normally expected of you because of drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'audit-question-six'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you needed a drink in the morning to get yourself going after a heavy drinking session?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'audit-question-seven'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you had a feeling of guilt or remorse after drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'audit-question-eight'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you been unable to remember what happened the night before because you had been drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'should-display-questions-nine-and-ten'
+        extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/designNote'
+            valueMarkdown: 'Display Question #9 of the Audit'
+          - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+            valueExpression:
+              language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+              expression: 'DisplayAuditQuestions9and10'
+              reference: '#AuditLogicLibrary|1.0'
+        enableWhen:
+          - question: "instructions"
+            operator: http://hl7.org/fhir/questionnaire-enable-operator|4.0.1#exists "Exists"
+            answerBoolean: true
+      - linkId: 'audit-question-nine'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Have you or someone else been injured as a result of your drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, but not in the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, during the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'audit-question-ten'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Has a relative or friend, doctor or other health worker been concerned about your drinking or suggested you cut down?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, but not in the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, during the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'Audit-score'
+        type: http://hl7.org/fhir/item-type|4.0.1#display 'Display'
+        text: 'AUDIT Score'
+        extension:
+        - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+          valueExpression:
+            language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+            expression: 'ScoreFullAudit'
+            reference: '#AuditLogicLibrary|1.0'
+      - linkId: 'pregnancy-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#boolean 'Boolean'
+        text: 'Are you pregnant or trying to be become pregnant?'
+- &Nida2UsAuditQuestionnaire
+  - resourceType: Questionnaire
+    url: 'http://www.cdc.gov/ncbddd/fasd/nidaqs2usaudit'
+    item:
+      - linkId: 'nidaqs-alcohol-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'In the past year, how often have you had X (5 for men; 4 for women and men over 65) or more drinks a day?'
+      - linkId: 'nidaqs-tobacco-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'In the past year, how often have you used tobacco products?'
+      - linkId: 'nidaqs-rx-drug-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'In the past year, how often have you used prescription drugs for nonmedical reasons?'
+      - linkId: 'nidaqs-illegal-drug-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'In the past year, how often have you used illegal drugs?'
+      - linkId: 'instructions'
+        type: http://hl7.org/fhir/item-type|4.0.1#display 'Display'
+      - linkId: 'prescreen-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Do you sometimes drink beer, wine, or other alcoholic beverages?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes
+      - linkId: 'usaudit-question-one'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often do you have a drink containing alcohol?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2to3timesaweek 2-3 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#4to6timesaweek 4-6 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 5
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 6
+      - linkId: 'usaudit-question-two'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How many standard drinks containing alcohol do you have on a typical day when drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#1drink 1 drink
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2drinks 2 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#3drinks 3 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#4drinks 4 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#5to6drinks 5-6 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#7to8drinks 7-8 drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 5
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#10ormoredrinks 10 or more drinks
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 6
+      - linkId: 'usaudit-question-three'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 
+          value: 'How often do you have X (5 for men; 4 for women and men over 65) or more drinks on one occasion?'
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/cqf-calculatedValue'
+            valueCoding: http://www.cdc.gov/ncbddd/fasd#CODE UsAuditQuestion3Text'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#2to3timesaweek 2-3 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#4to6timesaweek 4-6 times a week
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 5
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 6
+      - linkId: 'usauditc-score'
+        type: http://hl7.org/fhir/item-type|4.0.1#decimal 'Decimal'
+        text: 'AUDIT-C Score'
+        extension:
+        - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+          valueExpression:
+            language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+            expression: 'ScoreUsAuditC'
+            reference: '#UsAuditLogicLibrary|1.0'
+      - linkId: 'should-display-questions-four-through-eight'
+        extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/designNote'
+            valueMarkdown: 'Display Question #4 of the USAUDIT'
+          - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+            valueExpression:
+              language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+              expression: 'DisplayUsAuditQuestions4to8'
+              reference: '#UsAuditLogicLibrary|1.0'
+        enableWhen:
+          - question: "instructions"
+            operator: http://hl7.org/fhir/questionnaire-enable-operator|4.0.1#exists "Exists"
+            answerBoolean: true
+      - linkId: 'usaudit-question-four'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you found that you were not able to stop drinking once you had started?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-five'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you failed to do what was normally expected of you because of drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-six'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you needed a drink in the morning to get yourself going after a heavy drinking session?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-seven'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you had a feeling of guilt or remorse after drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-eight'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'How often during the past year have you been unable to remember what happened the night before because you had been drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#never Never
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#lessthanmonthly Less than monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 1
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#monthly Monthly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#weekly Weekly
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 3
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#daily Daily or almost daily
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'should-display-questions-nine-and-ten'
+        extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/designNote'
+            valueMarkdown: 'Display Question #9 of the USAUDIT'
+          - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+            valueExpression:
+              language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+              expression: 'DisplayUsAuditQuestions9and10'
+              reference: '#UsAuditLogicLibrary|1.0'
+        enableWhen:
+          - question: "instructions"
+            operator: http://hl7.org/fhir/questionnaire-enable-operator|4.0.1#exists "Exists"
+            answerBoolean: true
+      - linkId: 'usaudit-question-nine'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Have you or someone else been injured as a result of your drinking?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, but not in the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, during the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-question-ten'
+        type: http://hl7.org/fhir/item-type|4.0.1#choice 'Choice'
+        text: 'Has a relative or friend, doctor or other health worker been concerned about your drinking or suggested you cut down?'
+        answerOption:
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 0
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, but not in the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 2
+        - valueCoding: http://www.cdc.gov/ncbddd/fasd#yes Yes, during the last year
+          extension:
+          - url: 'http://hl7.org/fhir/StructureDefinition/ordinalValue'
+            valueDecimal: 4
+      - linkId: 'usaudit-score'
+        type: http://hl7.org/fhir/item-type|4.0.1#decimal 'Decimal'
+        text: 'AUDIT Score'
+        extension:
+        - url: 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression'
+          valueExpression:
+            language: http://hl7.org/fhir/expression-language|4.0.1#text/cql "CQL"
+            expression: 'ScoreFullUsAudit'
+            reference: '#UsAuditLogicLibrary|1.0'
+      - linkId: 'pregnancy-question'
+        type: http://hl7.org/fhir/item-type|4.0.1#boolean 'Boolean'
+        text: 'Are you pregnant or trying to be become pregnant?'

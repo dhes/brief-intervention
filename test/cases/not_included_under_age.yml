@@ -1,0 +1,20 @@
+---
+name: Not Included Under Age
+
+externalData:
+- resources
+
+data:
+-
+  resourceType: Patient
+  name: Joe Smith
+  gender: male
+  extension:
+  - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
+    valueCode: 'M'
+  birthDate: 2002-07-16
+- 
+  $import: *UsAuditQuestionnaire
+
+results:
+  IsIncluded: false

@@ -1,0 +1,21 @@
+---
+name: Complete NIDA QS and USAUDIT
+
+externalData:
+- resources
+
+data:
+-
+  resourceType: Patient
+  name: Joe Smith
+  gender: male
+  birthDate: 1978-07-16
+- 
+  $import: *Nida2UsAuditQuestionnaire
+- 
+  $iterate: *Nida2UsAuditQuestionnaireResponsesFullAuditComplete
+
+results:
+  IsIncluded: true
+  Excluded: false
+  NidaQsWasPerformed: true

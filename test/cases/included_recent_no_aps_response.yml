@@ -1,0 +1,33 @@
+---
+name: Included Recent No APS Response
+
+externalData:
+- resources
+
+data:
+-
+  resourceType: Patient
+  name: Jane Smith
+  gender: female
+  extension:
+  - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
+    valueCode: 'F'
+  birthDate: 1978-07-16
+- 
+  $import: *UsAuditQuestionnaire
+- 
+  resourceType: QuestionnaireResponse
+  questionnaire: 'http://www.cdc.gov/ncbddd/fasd/usaudit'
+  status: 'completed'
+  authored: 2020-01-20
+  item:
+  - linkId: 'prescreen-question'
+    answer:
+    - valueCoding: http://www.cdc.gov/ncbddd/fasd#no No
+
+results:
+  IsIncluded: true
+  HasRecentScoreUsAuditC: false
+  HasRecentScoreFullUsAudit: false
+  HasRecentScoreAuditC: false
+  HasRecentScoreFullAudit: false
